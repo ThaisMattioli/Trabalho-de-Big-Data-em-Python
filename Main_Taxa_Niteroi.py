@@ -47,7 +47,6 @@ plt.ylabel("Taxa média de desemprego")
 plt.title("Evolução da taxa média de desemprego em Niterói")
 plt.xticks(media_pandas["Ano"])
 
-#  FORMATAÇÃO DO EIXO Y NO GRÁFICO 
 plt.gca().get_yaxis().set_major_formatter(
     plt.FuncFormatter(lambda x, _: f"{x:,.0f}".replace(",", "."))
 )
@@ -56,3 +55,4 @@ plt.tight_layout()
 plt.show()
 
 spark.stop()
+
